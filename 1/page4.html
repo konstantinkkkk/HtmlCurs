@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <title> ОАО "ТвинТрее"</title>
+        <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600;700;900&family=Play:wght@400;700&display=swap"
+    rel="stylesheet">
+    </head>
+    <body>
+        
+       <div class="container">
+        <header class="header">
+            <img src="иконка.svg", alt="logotype" class="header__logo">
+            <ul class="header__menu">
+                <li class="menu__item"><a href="./page1.html" class="menu__link">Главная</a></li>
+                <li class="menu__item"><a href="./page2.html" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="./page3.html" class="menu__link">Контактная Информация</a></li>
+                <li class="menu__item"><a href="./page4.html" class="menu__link">Интернет магазин</a></li>
+            </ul>
+        </header> 
+        <main class="main">
+            <section class="catalog">
+                <div class="container">
+                    <h2 class="catalog__title">Каталог</h2>
+                    <div class="tabs">
+                        <div class="tabs__btns">
+                            <button class="tabs__btns-item tabs__btns-item--active"
+                                data-button="content-1">Двери</button>
+                            <button class="tabs__btns-item" data-button="content-2">Мебель</button>
+                            <button class="tabs__btns-item" data-button="content-3">Фанера</button>
+                            <button class="tabs__btns-item" data-button="content-4">Древесина</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__content-item tabs__content-item--active" id="content-1">
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/door-1.png" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дверь "Альта"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/door-2.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дверь "Нео"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-083</p>
+                                    <p class="tabs__card-price">1 083р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/door-3.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дверь "Империал"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-044</p>
+                                    <p class="tabs__card-price">1 092р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <!-- <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-4.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-5.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-6.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-7.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-8.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fridge-9.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div> -->
+                            </div>
+                            <div class="tabs__content-item" id="content-2">
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/mebel-1.png" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Диван "Лукреция"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-096</p>
+                                    <p class="tabs__card-price">1 135р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/mebel-2.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Диван "Кампания"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-156</p>
+                                    <p class="tabs__card-price">1 420р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/mebel-3.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Стул "Каран"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-003</p>
+                                    <p class="tabs__card-price">1 630р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/mebel-4.jpeg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Стул "Атла"</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-006</p>
+                                    <p class="tabs__card-price">1 896р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <!-- <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/wash-5.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/wash-6.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div> -->
+                            </div>
+                            <div class="tabs__content-item" id="content-3">
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fanera-1.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Фанера лакерованая</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-074</p>
+                                    <p class="tabs__card-price">1 466р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/fanera-2.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Фанера обыкновенная</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-015</p>
+                                    <p class="tabs__card-price">1 079р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <!-- <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/cook-3.jpeg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Холодильник ATLANT</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-022</p>
+                                    <p class="tabs__card-price">1 057р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div> -->
+                            </div>
+                            <div class="tabs__content-item" id="content-4">
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/drova-1.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дрова Сосновые</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-098</p>
+                                    <p class="tabs__card-price">1 764р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/drova-2.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дрова Березовые</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-085</p>
+                                    <p class="tabs__card-price">1 075р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                                <div class="tabs__card">
+                                    <img src="./img/catalog-tabs/drova-3.jpg" alt="" class="tabs__card-img">
+                                    <h4 class="tabs__card-title">Дрова Дубовые</h4>
+                                    <p class="tabs__card-subtitle">ХМ 4012-097</p>
+                                    <p class="tabs__card-price">1 045р.</p>
+                                    <a href="#" class="tabs__card-link">подробнее...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            
+            <div class="info">
+                <p class="adres__info"> Адрес:  ул. Великий гостинец 24, г. Минск, Минский район РБ </p>
+                <p class="phonenumber__info"> Телефон: +375292984236</p>
+                <p class="email__info"> Почта: tvintree@mail.ru</p>
+            </div>
+            <img src="иконка.svg", alt="logotype" class="footer__logo">
+            
+        </footer>  
+    </div>
+    <script src="./js/catalog.js" type="module"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/menu.js"></script>
+    </body>
+    
+</html>
