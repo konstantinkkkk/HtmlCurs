@@ -1,6 +1,9 @@
-const menuBtn = document.querySelector('.menu-btn');
-const menuList = document.querySelector('.menu__list');
+const menu_btn = document.querySelector(".menu-btn");
+const header__menu = document.querySelector(".header .header__menu");
 
-menuBtn.addEventListener('click', () => {
-    menuList.classList.toggle('menu__list--active')
-});
+const openMenu = () => {
+    header__menu.classList.toggle('active');
+    menu_btn.classList.toggle('active');
+}
+
+menu_btn.addEventListener('click' , openMenu);

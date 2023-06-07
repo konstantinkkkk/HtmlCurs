@@ -23,15 +23,19 @@
 .header .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  gap: 100px;
-  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  gap: 25px;
 }
 
 .header .header__menu .menu__item {
   padding: 10px 25px;
-  background-color: rgb(11, 124, 45);
+  background-color: darkgreen;
+    display: inline-block;
+    text-align: center;
 }
 
 .header .header__menu .menu__item a {
@@ -57,7 +61,7 @@
   text-align: left;
 }
 .footer .footer__logo {
-  margin-left: 25%;
+  margin-left: 30%;
   height: 150px;
   width: 150px;
 }
@@ -104,10 +108,12 @@ background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2px;
   gap: 10px;
 }
 
 .main .main__left .main__text-row .text__row-block {
+  display: grid;
   padding: 5px;  
 }
 .main .main__left .main__text-row .text_button {
@@ -118,7 +124,7 @@ background-color: white;
 
 .main .main__left .main__text-row .text_contact {
   padding: 5px; 
-
+  font-size: 20px;
   align-content: left;
   border: 2px solid black;
 }
@@ -136,9 +142,7 @@ background-color: white;
     width: 150px;
     }
 /* -----------------Page 4----------------------- */
-.main {
-  flex-grow: 1;
-}
+
 .catalog {
   max-width: 1200 px;
   width: 100%;
@@ -155,7 +159,7 @@ background-color: white;
 }
 .tabs__btns .tabs__btns-item--active {
   background: #0bcc3b;
-  color: #fff;
+  color: white;
 }
 
 .tabs__content-item {
@@ -177,8 +181,8 @@ background-color: white;
 .tabs__card {
   max-width: 270px;
   text-align: center;
-  background-color: #fff;
-  border: 1px solid #d3d3d3;
+  background-color: white;
+  border: 1px solid lightgray;
   border-radius: 20px;
   padding: 10px;
   display: flex;
@@ -187,13 +191,13 @@ background-color: white;
 }
 .tabs__card .tabs__card-price {
   font-size: 20px;
-  color: #0bcc3b;
+  color: mediumseagreen;
   font-weight: 700;
 }
 .tabs__card .tabs__card-link {
   font-weight: 300;
   padding: 10px;
-  background: #d3d3d3;
+  background: lightgray;
   border-radius: 10px;
 }
 .tabs__btns {
@@ -204,13 +208,13 @@ background-color: white;
 .tabs__btns .tabs__btns-item {
   padding: 10px 20px;
   font-size: 18px;
-  background: #d3d3d3;
-  color: #000;
+  background: lightgray;
+  color: black;
   border-radius: 20px;
 }
 .tabs__btns .tabs__btns-item--active {
-  background: #0bcc3b;
-  color: #fff;
+  background: mediumseagreen;
+  color: white;
 }
 
 .tabs__content-item {
@@ -225,22 +229,134 @@ background-color: white;
 .tabs__btns .tabs__btns-item {
   padding: 10px 10px;
 }
+.menu-btn {
+  position: absolute;
+  z-index: 4;
+  display: none;
+  width: 18px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-btn div {
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  background: black;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu-btn div:nth-child(2) {
+  top: 50%;
+}
+
+.menu-btn div:nth-child(3) {
+  top: 100%;
+}
+.menu-btn {
+  width: 45px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
 @media (max-width: 790px) {
   .tabs__btns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+  .tabs__content-item {
+  grid-template-columns: repeat(2, 1fr);
 }
+.header .header__menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer .info {
+  padding: 2px;
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+}
+.footer .footer__logo {
+  margin-left: 10%;
+  height: 150px;
+  width: 150px;
+}
+.main .main__left .main__text-row  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+  grid-template-columns: repeat(1);
+  gap: 10px;
+}
+  .main .main__left {
+    max-width: 760 px;
+    width: 100%;
+  background-color: white;
+  }
+.main .main__left .main__text-row .text_contact {
+  display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  padding: 7px; 
+  font-size: 15px;
+  align-content: left;
+  border: 2px solid black;
+}
+}
+
 @media (max-width: 560px) {
   .tabs__btns {
     grid-template-columns: repeat(1, 1fr);
   }
+  .tabs__content .tabs__content-item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer .info {
+    padding: 2px;
+    font-size: 15px;
+    font-style: italic;
+    text-align: left;
+  }
+  .footer .footer__logo {
+    margin-left: 10%;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .main .main__left {
+    max-width: 560 px;
+    width: 100%;
+  background-color: white;
+  }
+  .header .header__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ .main .main__text-row  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 10px;
+  }
+   .main .main__left .main__text-row .text_contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px; 
+    font-size: 15px;
+    align-content: left;
+    border: 2px solid black;
+  }
+
 }
-.tabs__content-item {
-  grid-template-columns: repeat(2, 1fr);
-}
-.tabs__btns .tabs__btns-item {
-  padding: 10px 10px;
-}
+
+
 

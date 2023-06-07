@@ -1,0 +1,41 @@
+<XML ID="dsoPRODUCTS">
+    <?xml version="1.0"?>
+    <PRODUCTS>
+        <PRODUCT>
+            <TITLE> Дверь "Альта" </TITLE>
+            <subtitle> ХМ 4012-022 </subtitle>
+            <PRICE>1 057р</PRICE>
+            <image> ./img/catalog-tabs/door-1.png </image>
+        </PRODUCT>
+        <PRODUCT>
+            <TITLE> Дверь "Нео" </TITLE>
+            <subtitle>ХМ 4012-083 </subtitle>
+            <PRICE>1 083р.</PRICE>
+            <image> ./img/catalog-tabs/door-2.jpg </image>
+        </PRODUCT>
+        <PRODUCT>
+            <TITLE> Дверь "Империал" </TITLE>
+            <subtitle> ХМ 4012-044 </subtitle>
+            <PRICE>1 092р.</PRICE>
+            <image> ./img/catalog-tabs/door-3.jpg </image>
+        </PRODUCT>
+        <PRODUCT>
+            <TITLE>Диван "Милан" </TITLE>
+            <subtitle> ХМ 4012-022 </subtitle>
+            <PRICE>1 057р</PRICE>
+            <image> ./img/catalog-tabs/mebel-1.png </image>
+        </PRODUCT>
+        <PRODUCT>
+            <TITLE>Диван "Венеция" </TITLE>
+            <subtitle> ХМ 4012-022 </subtitle>
+            <PRICE>1 057р</PRICE>
+            <image> ./img/catalog-tabs/mebel-2.png </image>
+        </PRODUCT>
+        <PRODUCT>
+            <TITLE>Диван "Тоскана" </TITLE>
+            <subtitle> ХМ 4012-022 </subtitle>
+            <PRICE>1 057р</PRICE>
+            <image> ./img/catalog-tabs/mebel-3.png </image>
+        </PRODUCT>
+    </PRODUCTS>
+</XML>
